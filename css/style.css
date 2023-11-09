@@ -1,0 +1,31 @@
+
+
+.table-icons {
+    width: 30px;
+}
+
+td {
+    text-align: center;
+}
+
+.high_priority {
+    background-color: rgb(206, 18, 18);
+    border-radius: 25px;
+    padding:10px;
+    color:white;
+}
+
+.normal_priority {
+    background-color: rgb(84, 153, 249);
+    border-radius: 25px;
+    padding:10px;
+    color:white;
+}
+
+.low_priority {
+    background-color: rgb(11, 223, 89);
+    border-radius: 25px;
+    padding:10px;
+    color:white;
+}
+
