@@ -1,31 +1,45 @@
 
-
 .table-icons {
     width: 30px;
 }
 
+p {
+    margin:0px;
+    text-align: center; 
+    vertical-align: middle;
+}
+
 td {
-    text-align: center;
+    text-align: center; 
+    vertical-align: middle;
 }
 
 .high_priority {
-    background-color: rgb(206, 18, 18);
+    background-color:#DB4323;
     border-radius: 25px;
-    padding:10px;
+    padding:7px;
     color:white;
 }
 
 .normal_priority {
-    background-color: rgb(84, 153, 249);
+    background-color: #3EACDD;
     border-radius: 25px;
-    padding:10px;
+    padding:7px;
     color:white;
 }
 
 .low_priority {
-    background-color: rgb(11, 223, 89);
+    background-color: #A6E13B;
     border-radius: 25px;
-    padding:10px;
+    padding:7px;
     color:white;
 }
 
+.completed-title {
+    text-decoration: line-through; 
+    color: #888; 
+}
+
+.uncompleted-title {
+    color: white; 
+}

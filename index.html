@@ -9,82 +9,47 @@
 </head>
 <body>
     <div class="container mt-5 text-center">
-
-    
+      <h1>To Do List</h1>
         <form>
-        <div class="row mb-5">
-            <div class="col">
-                <label for="Task-Title">Atliekamos uzduoties pavadinimas</label>
-                <input type="text" class="form-control" id="Task-Title" aria-describedby="emailHelp">
-            </div>
-               <div class="col">
-                <label for="priority-pick">Pasirinkite prioriteta</label>
-                <select id="priority-pick" class="form-select" aria-label="Default select example">
-                <option value="1">Low</option>
-                <option value="2">Medium</option>
-                <option value="3">High</option>
-                </select>
+            <div class="row mb-5 bg-light p-3">
+                <div class="col-xl-3 col-xs-12">
+                    <label for="Task-Title">Užduoties pavadinimas</label>
+                    <input type="text" class="form-control" id="Task-Title" placeholder="Iveskite uzduoties pavadinimą">
                 </div>
-                <div class="col">
+                <div class="col-xl-3 col-xs-12">
+                    <label for="priority-pick">Užduoties prioriteto lygis</label>
+                    <select id="priority-pick" class="form-select" aria-label="Default select example">
+                        <option value="1">Low</option>
+                        <option value="2">Medium</option>
+                        <option value="3">High</option>
+                    </select>
+                </div>
+                <div class="col-xl-3 col-xs-12">
                     <label for="pick-date">Pasirinkite atlikimo data</label>
-                    <input type="date" class="form-control" id="pick-date" aria-describedby="emailHelp" placeholder="Iveskite uzduoties pavadinima">
+                    <input type="date" class="form-control" id="pick-date">
                 </div>
-                <div class="col">
-                <button type="submit" class="btn btn-primary">Prideti uzduoti</button>
+                <div class="col-xl-3 col-xs-12 mt-3">
+                    <button type="button" class="btn btn-primary" id="addTaskBtn">Sukurti užduotį</button>
                 </div>
             </div>
         </form>
-
-
-
-
         <table class="table">
             <thead>
-              <tr>
-                <th class="bg-light" scope="col"> <img class="table-icons" src="img/stats.png"></th>
-                <th class="text-center bg-light" scope="col">Subject</th>
-                <th class="text-center bg-light" scope="col">Priority</th>
-                <th class="text-center bg-light" scope="col">Due date</th>
-                <th class="text-center bg-light" scope="col">Status</th>
-                <th class="text-center bg-light" scope="col">Percent completed</th>
-                <th class="text-center bg-light" scope="col">Modified on</th>
-              </tr>
+                <tr>
+                    <th class="bg-light" scope="col"> <img class="table-icons" src="img/stats.png" alt="stats"></th>
+                    <th class="text-center bg-light" scope="col">Subject</th>
+                    <th class="text-center bg-light priority" scope="col">Priority</th>
+                    <th class="text-center bg-light" scope="col">Due date</th>
+                    <th class="text-center bg-light" scope="col">Status</th>
+                    <th class="text-center bg-light" scope="col">Percent completed</th>
+                    <th class="text-center bg-light" scope="col">Modified on</th>
+                    <th class="text-center bg-light priority" scope="col">Delete task</th>
+                </tr>
             </thead>
             <tbody>
-              <tr>
-                <th scope="row"><img class="table-icons" src="img/check.png"></th>
-                <td><div id="checkBtn"><img class="me-3 table-icons" src="img/not-check.png">Launch new website</div></td>
-                <td><div class="high_priority">High</div></td>
-                <td></td>
-                <td>Complete</td>
-                <td>100%</td>
-                <td>04/05/2018 01:51 PM</td>
-                <td>
-                <button type="button" class="text-center btn btn-danger" id="addList">Pasalinti</button>
-                </td>
-              </tr>
-              <tr>
-                <th scope="row"><img class="table-icons" src="img/check.png"></th>
-                <td><div id="checkBtn"><img class="me-3 table-icons" src="img/is-check.png">Launch new website</div></td>
-                <td><div class="normal_priority">Normal</div></td>
-                <td></td>
-                <td>Complete</td>
-                <td>70%</td>
-                <td>04/05/2018 01:51 PM</td>
-              </tr>
-              <tr>
-                <th scope="row"><img class="table-icons" src="img/check.png"></th>
-                <td><div id="checkBtn"><img class="me-3 table-icons" src="img/is-check.png">Launch new website</div></td>
-                <td><div class="low_priority">Low</div></td>
-                <td></td>
-                <td>Complete</td>
-                <td>70%</td>
-                <td>04/05/2018 01:51 PM</td>
-              </tr>
- 
             </tbody>
-          </table>
+        </table>
     </div>
-</body>
     <script src="js/todo.js"></script>
+</body>
 </html>
